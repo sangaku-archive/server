@@ -1,0 +1,60 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://sangaku-archive.online/test/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "jp": [
+      "金王八幡神社東京都渋谷区渋谷"
+    ],
+    "en": [
+      "Tokyo, Shibuya-ku, Shibuya, Kin'ō Hachiman Shrine"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Sangaku Archive"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://sangaku-archive.online/0800b596-38ed-4e0d-93fc-7c475251d21b/canvas/p1",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "1"
+        ]
+      },
+      "height": 1200,
+      "width": 800,
+      "items": [
+        {
+          "id": "https://sangaku-archive.online/0800b596-38ed-4e0d-93fc-7c475251d21b/page/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://sangaku-archive.online/0800b596-38ed-4e0d-93fc-7c475251d21b/annotation/p0001-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://sangaku-archive.online/images/iiif/3/1a.jpeg/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": {
+                  "id": "http://sangaku-archive.online/images/iiif/3/",
+                  "type": "ImageService3",
+                  "profile": "level2",
+                  "service": [
+                    {
+                      "@id": "https://example.org/iiif/auth/login",
+                      "@type": "AuthCookieService1"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
