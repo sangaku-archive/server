@@ -5,11 +5,17 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	r := gin.Default()
+
+	// Allow all origins
+	corsConfig := cors.DefaultConfig()
+	corsConfig.AllowAllOrigins = true
+	r.Use(cors.New(corsConfig))
 
 	r.GET("/:manifest/manifest.json", func(c *gin.Context) {
 
