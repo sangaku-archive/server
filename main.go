@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"os"
 
@@ -21,13 +20,11 @@ func main() {
 			c.JSON(http.StatusNotFound, err)
 		}
 
-		fmt.Println("Successfully Opened users.json")
 		defer jsonFile.Close()
 
 		byteValue, _ := os.ReadFile(manifestPath)
 
 		var manifest Manifest
-
 		json.Unmarshal(byteValue, &manifest)
 
 		c.JSON(http.StatusOK, manifest)
