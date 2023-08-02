@@ -1,0 +1,1 @@
+docker build --no-cache --platform linux/amd64 -t gspinaci/sangaku-archive-server:linux-amd64 . --push
