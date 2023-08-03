@@ -41,12 +41,12 @@ type Annotation struct {
 }
 
 type AnnotationBody struct {
-	Id      string  `json:"id"`
-	Type    string  `json:"type"`
-	Format  string  `json:"format"`
-	Service Service `json:"service"`
-	Height  int     `json:"height,omitempty"`
-	Width   int     `json:"width,omitempty"`
+	Id      string    `json:"id"`
+	Type    string    `json:"type"`
+	Format  string    `json:"format"`
+	Service []Service `json:"service"`
+	Height  int       `json:"height,omitempty"`
+	Width   int       `json:"width,omitempty"`
 }
 
 type ResponseImageAPI struct {
