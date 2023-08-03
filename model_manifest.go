@@ -64,5 +64,5 @@ type Service struct {
 	Id      string     `json:"id"`
 	Type    string     `json:"type"`
 	Profile string     `json:"profile"`
-	Service []Service2 `json:"service"`
+	Service []Service2 `json:"service,omitempty"`
 }
